@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background:
+    height: 100%;
+    width: 100%;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $primary-bright-blue;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
