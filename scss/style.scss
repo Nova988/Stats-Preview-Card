@@ -28,6 +28,10 @@ html {
     line-height: 1.6;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 img {
     width: 100%;
 }
@@ -47,11 +51,71 @@ a {
     min-height: 100vh;
 }
 
+
 // card style
 #card {
+    background: $primary-dark-desaturated-blue;
     display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.7rem;
 
     .card-text {
-        max-width: 800px;
+        max-width: 550px;
+        padding: 4rem 4rem 0 4rem;
+
+        &-title {
+            line-height: 1.3;
+
+            span {
+                color: $primary-soft-violet;
+            }
+        }
+
+        &-desc {
+            max-width: 350px;
+            padding-top: 2rem;
+            color: $neutral-transparent-white;
+        }
+
+        &-markups{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5rem;
+            width: 350px;
+
+            &-object:last-child {
+                text-transform: uppercase;
+            }
+
+            p:first-child {
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+
+            p:last-child {
+                color: $neutral-transparent-white-heading;
+                letter-spacing: 0.1rem;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .card-image {
+        background: $primary-soft-violet;
+        position: relative;
+        img {
+            height: 100%;
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+        }
+    }
+}
+
+// Media querieus 
+@media(max-width:480px) {
+    #card {
+        flex-direction: column-reverse;
     }
 }

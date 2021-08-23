@@ -13,6 +13,9 @@ html {
   color: #fff;
   line-height: 1.6; }
 
+h1 {
+  font-size: 2.5rem; }
+
 img {
   width: 100%; }
 
@@ -29,6 +32,45 @@ a {
   min-height: 100vh; }
 
 #card {
-  display: flex; }
+  background: #1b1938;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.7rem; }
   #card .card-text {
-    max-width: 800px; }
+    max-width: 550px;
+    padding: 4rem 4rem 0 4rem; }
+    #card .card-text-title {
+      line-height: 1.3; }
+      #card .card-text-title span {
+        color: #aa5cdb; }
+    #card .card-text-desc {
+      max-width: 350px;
+      padding-top: 2rem;
+      color: rgba(255, 255, 255, 0.75); }
+    #card .card-text-markups {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 5rem;
+      width: 350px; }
+      #card .card-text-markups-object:last-child {
+        text-transform: uppercase; }
+      #card .card-text-markups p:first-child {
+        font-size: 1.6rem;
+        font-weight: 700; }
+      #card .card-text-markups p:last-child {
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        text-transform: uppercase; }
+  #card .card-image {
+    background: #aa5cdb;
+    position: relative; }
+    #card .card-image img {
+      height: 100%;
+      mix-blend-mode: multiply;
+      opacity: 0.8; }
+
+@media (max-width: 480px) {
+  #card {
+    flex-direction: column-reverse; } }
