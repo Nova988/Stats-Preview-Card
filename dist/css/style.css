@@ -72,5 +72,22 @@ a {
       opacity: 0.8; }
 
 @media (max-width: 480px) {
+  h1 {
+    font-size: 2rem; }
   #card {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse;
+    margin: 4rem 1rem;
+    text-align: center; }
+    #card .card-text {
+      padding: 3rem 2rem; }
+      #card .card-text-desc p {
+        padding: 0 1rem; }
+      #card .card-text-markups {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 3rem; }
+        #card .card-text-markups-object {
+          padding-bottom: 2rem; }
+          #card .card-text-markups-object:last-child {
+            padding-bottom: 0; } }

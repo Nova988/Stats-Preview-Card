@@ -115,7 +115,37 @@ a {
 
 // Media querieus 
 @media(max-width:480px) {
+    h1 {
+        font-size: 2rem;
+    }
     #card {
         flex-direction: column-reverse;
+        margin: 4rem 1rem;
+        text-align: center;
+
+        .card-text {
+            padding: 3rem 2rem;
+
+            &-desc {
+                p {
+                    padding: 0 1rem;
+                }
+            }
+
+            &-markups {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding-top: 3rem;
+
+                &-object {
+                    padding-bottom: 2rem;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 }
